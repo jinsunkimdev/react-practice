@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.Card-container{
+    min-height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    border: 2px solid lavender;
+    background: linear-gradient(270deg, #43cea2, #185a9d);
+    background-size: 200% 200%;
+	animation: MoveGrad 5s ease infinite;
+    flex-direction: column;
+    width: 35%;
+    color: whitesmoke;
+    border-radius: 3% 3%;
+}
+    @keyframes MoveGrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    h1{
+    margin: .1em 0 0 0;
+}
+h2{
+    color: #000428;
+}
+h4{
+    margin: .3em 0;
+}
+
+.Profile-image{
+     max-width: 100%;
+    display: block;
+    border-radius: 3% 3% 0 0;
+}
+.Profile-text{
+    text-align: center;
+}
+.Button-container{
+    width: 50%;
+    align-items:center;
+    margin: .3em auto;
+    display: flex;
+    justify-content: space-between;
+}
+button:nth-child(2){
+    background-color: #0077b5;
+    color: whitesmoke;
+}
+button{
+    font-size: 1rem;
+    padding: .3em .5em;
+    border-radius: .5em;
+}
+.Paragraph-container{
+    margin: 0 2em;
+}
+.First-paragraph{
+    margin: 1em 0 2em 0;
+}
