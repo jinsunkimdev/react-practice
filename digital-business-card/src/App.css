@@ -4,14 +4,13 @@
 }
 .Card-container{
     min-height: 100vh;
+    width: 27%;
     display: flex;
     margin: 0 auto;
-    border: 2px solid lavender;
     background: linear-gradient(270deg, #43cea2, #185a9d);
     background-size: 200% 200%;
 	animation: MoveGrad 5s ease infinite;
     flex-direction: column;
-    width: 35%;
     color: whitesmoke;
     border-radius: 3% 3%;
 }
@@ -31,7 +30,7 @@ h4{
 }
 
 .Profile-image{
-     max-width: 100%;
+    max-width: 100%;
     display: block;
     border-radius: 3% 3% 0 0;
 }
