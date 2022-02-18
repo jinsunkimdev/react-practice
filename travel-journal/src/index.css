@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box /* recommend */
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.navbar{
+     background: linear-gradient(270deg, #b473df, #f35555, #f9c378);
+    background-size: 200% 200%;
+	animation: MoveGrad 5s ease infinite;
+}
+     @keyframes MoveGrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.navbar--title{
+    margin:0;
+    font-size: 2rem;
+    color: whitesmoke;
+    display:flex;
+    align-items: center;
+justify-content:center;
+}
+.navbar--title__icon{
+    margin: 10px;
+}
+.card{
+    display:flex;
+    padding: 10px 20px;
+}
+.card--container{
+    padding: 10px 20px;
+}
+.card--location__icon{
+    color: tomato;
+    padding-right: 5px;
+}
+.card--location a{
+    color: grey;
+    padding-left: 8px;
+}
+.card--image{
+    border-radius:10px;
+    max-width: 100%;
+    display: block;
+    width: 30vw;
+}
+.card--location{
+    align-items: center;
+    display:flex;
+}
+.card--location div{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.card--description{
+    line-height: 1.4rem;
+}
