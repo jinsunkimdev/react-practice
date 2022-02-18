@@ -80,3 +80,7 @@ flex-direction: column;
 .color--grey{
     color: grey;
 }
+
+.cards--list{
+    display: flex;
+}
