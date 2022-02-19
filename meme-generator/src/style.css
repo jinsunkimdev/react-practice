@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    color: cornsilk;
+    height: 80px;
+    background: linear-gradient(270deg, #C22ED0, #EF96C5, #5FFAE0);
+    background-size: 200% 200%;
+    animation: MoveGrad 5s ease infinite;   
+}
+@keyframes MoveGrad {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+.navbar img{
+    max-width: 100%;
+    width: 7rem;
+    display: block;
+    padding: 5px 10px;
+}
+.navbar h1{
+    font-size: 2.5rem;
+    font-weight:700;
+}
+.header--input{
+    display:flex;
+    justify-content: space-around;
+}
+form{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 20px;
+}
+.form--input{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+.form--button{
+    grid-column: 1 / -1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background: linear-gradient(90.41deg, #C22ED0 1.14%, #5FFAE0 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+main{
+    padding: 36px;
+}
