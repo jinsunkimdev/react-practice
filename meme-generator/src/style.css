@@ -48,8 +48,12 @@ code {
 }
 form{
     display: grid;
-    grid-template: 40px 40px / 1fr 1fr;
-    gap: 20px;
+    grid-template: 50px 50px / 1fr 1fr;
+    gap: 10px;
+}
+form img{
+     max-width: 100%;
+    display: block;
 }
 .form--input{
     border: 1px solid lightgrey;
