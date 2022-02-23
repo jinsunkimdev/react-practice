@@ -51,10 +51,6 @@ form{
     grid-template: 50px 50px / 1fr 1fr;
     gap: 10px;
 }
-form img{
-     max-width: 100%;
-    display: block;
-}
 .form--input{
     border: 1px solid lightgrey;
     border-radius: 10px;
@@ -62,6 +58,7 @@ form img{
 }
 .form--button{
     grid-column: 1 / -1;
+    margin-bottom: .3rem;
     font-size: 1.3rem;
     font-weight: 700;
     border-radius: 10px;
@@ -72,4 +69,44 @@ form img{
 }
 main{
     padding: 36px;
+}
+.meme{
+    position: relative;
+}
+.meme img{
+    margin: 0 auto;
+}
+.meme--text {
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+} 
+.topText{
+    top: 10%;
+}
+.bottomText{
+    bottom: 10%;
+}
+img{
+     max-width: 100%;
+    display: block;
 }
