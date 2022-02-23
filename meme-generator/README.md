@@ -6,4 +6,4 @@
 ![Made-with-javascript](https://img.shields.io/badge/Made%20with-javascript-%23F7DF1E?style=plastic&logo=javascript)
 
 ## PREVIEW
-<img width="1437" alt="screenshot220220" src="https://user-images.githubusercontent.com/69026725/154807648-7fc36125-e8e1-4a01-98e6-b07b017331d0.png">
+
