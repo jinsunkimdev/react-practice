@@ -1,12 +1,23 @@
-import { useState } from "react";
-import memesData from "../memesData";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Header = () => {
+  const [memesData, setMemesData] = useState({});
+
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
-    randomImg: memesData.data.memes[4].url,
+    randomImg: "https://i.imgflip.com/261o3j.jpg",
   });
+
+  useEffect(() => {
+    const getMemesData = async () => {
+      const res = await axios(process.env.REACT_APP_MEME_API);
+      const data = await res;
+      setMemesData(data.data);
+    };
+    getMemesData();
+  }, []);
 
   const getMemeImage = (e) => {
     e.preventDefault();
@@ -20,6 +31,7 @@ const Header = () => {
       };
     });
   };
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setMeme((prevElement) => {

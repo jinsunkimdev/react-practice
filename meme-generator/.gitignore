@@ -1,6 +1,7 @@
 # custom
 images/
 memesData.js
+.env
 
 # dependencies
 /node_modules
